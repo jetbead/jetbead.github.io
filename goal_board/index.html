@@ -9,7 +9,15 @@
         var get_data = function(){
           var url = "https://raw.githubusercontent.com/jetbead/jetbead.github.io/master/goal_board/score.txt";
           $.get(url, function(data){
-            $("#text").html(data);
+            var ret = "";
+
+            var lines = data.split("\n");
+            for(var i=0; i<lines.length; i++){
+              var sp = lines[i].split("\t");
+              ret += sp[0] + "<br/>";
+            }
+
+            $("#text").html(ret);
           });
         };
 
