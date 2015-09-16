@@ -7,7 +7,8 @@
     <script type="text/javascript">
       $(function(){
         var get_data = function(){
-          $.get("https://raw.githubusercontent.com/jetbead/jetbead.github.io/master/README.md", function(data){
+          var url = "https://raw.githubusercontent.com/jetbead/jetbead.github.io/master/goal_board/score.txt";
+          $.get(url, function(data){
             $("#text").html(data);
           });
         };

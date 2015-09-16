@@ -1,2 +1,2 @@
-OK	SRMに参加する
-NO	Codeforcesに参加する
+OK	20	SRMに参加する
+NO	20	Codeforcesに参加する
