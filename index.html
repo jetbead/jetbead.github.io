@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Negative/Positive Thinking</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+    <!--
+body {
+  min-height: 2000px;
+  padding-top: 50px;
+}
+header.jumbotron {
+  height: 460px;
+  padding-top: 150px;
+  background: url("./img/l_038.jpg") center 0 no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px){
+header.jumbotron {
+  height: 410px;
+  background: url("./img/l_038.jpg") center no-repeat;
+  background-size: cover;
+}
+}
+.pad30 {
+  padding-top: 30px;
+}
+    //-->
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="./index.html" class="navbar-brand">Negative/Positive Thinking</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="#mytheme">Top</a></li>
+                <li class="divider"></li>
+                <li><a href="#myclassif">分類器</a></li>
+                <li><a href="#myfeateng">素性設計</a></li>
+                <li><a href="#mynlp">自然言語処理</a></li>
+                <li><a href="#mydimred">次元圧縮</a></li>
+                <li><a href="#mylm">言語モデル</a></li>
+                <li><a href="#mysearch">検索</a></li>
+                <li><a href="#myprobstat">確率統計</a></li>
+                <li><a href="#myalgorithm">アルゴリズム</a></li>
+                <li><a href="#mydatastructure">データ構造</a></li>
+                <li><a href="#mytool">ツール</a></li>
+                <li><a href="#myother">その他</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="http://d.hatena.ne.jp/jetbead/">Hatena Diary</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <header class="jumbotron">
+      <div class="container">
+         <h1 class="jumbotron-h1">Negative/Positive Thinking</h1>
+         <p>Natural Language, Machine Learning, Statistics, Algorithm, Data Structure, and so on.</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- about -->
+      <div class="bs-docs-section" id="about">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header pad30">
+              <h1>About</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="bs-component">
+              <h2>ブログについて</h2>
+              <p>世の中に研究・実践されている日本語処理・機械学習の技術をまとめたり、実装したり、追試をしてみることを目的としています。</p>
+              <p>根拠などはReferenceとしてのせているつもりですが、理解・プログラムの間違いやコメントなどがあればぜひ教えてください:D</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="bs-component">
+              <h2>このページについて</h2>
+              <p>ブログの関連項目ごとのまとめページです。</p>
+              <p>テーマごとの記事への概要とリンク集になっています。</p>
+              <p>ラベルの意味は、以下になっています。</p>
+              <p><span class="label label-primary">メモ</span> : 資料などを参考にまとめたもの</p>
+              <p><span class="label label-success">試す</span> : 理解を確認するためにまとめたもの(理解度90%～)</p>
+              <p><span class="label label-warning">遊ぶ</span> : 理解を促すためにまとめたもの(理解度50～90%)</p>
+              <p><span class="label label-danger">code</span> : 検証用のプログラム付き</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="bs-component">
+              <h2>免責事項/Disclaimer</h2>
+              <p>ブログにのっているプログラムは学習用に作成したものであるため、バグが含まれたりや実用に耐えられないような実装になっている可能性があります。</p>
+              <p class="text-danger">試用の際は、自己責任でお願いいたします。これらを利用して発生した損害等に対して一切責任を負いません。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- contents -->
+<!--
+<span class="label label-primary">メモ</span>
+<span class="label label-success">試す</span>
+<span class="label label-warning">遊ぶ</span>
+<span class="label label-danger">code</span>
+<span class="label label-info">????</span>
+
+<li><a href=""></a> <span class="label label-success">試す</span> <span class="label label-danger">code</span></li>
+-->
+      <div class="bs-docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="mytheme">テーマ別記事まとめ</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="bs-component">
+              <div id="myclassif" class="pad30">
+                <h2>分類器</h2>
+                <p>さまざまな分類器の実装</p>
+                <ul>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110923/1316794768">PA-regression</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20150712/1436680805">Elman net</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20150627/1435378993">多層ニューラルネット</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20150514/1431612867">Feature-Weighted Linear Stacking</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20141220/1419012475">AdaDelta</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20141106/1415208665">Feature Hashing</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140916/1410798409">NBSVM</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140731/1406739777">マルチラベル分類</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140116/1389806957">Stacked denoising Autoencoder</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20131207/1386351194">ランダムフォレスト</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20131129/1385658526">ロジスティック回帰</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130905/1378310497">Label Propagation</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130702/1372697675">TWCNB</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130510/1368120547">SCW</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20121110/1352525897">Feedforward NeuralNetwork</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120511/1336667073">決定木</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111125/1322236626">CRF</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111112/1321066913">FOBOS</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110923/1316769132">PA-IIとSVMの比較</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110923/1316731979">Passive-Aggressive</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110915/1316103059">多クラス分類</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110911/1315725700">Perceptronの学習過程可視化</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110904/1315147131">RBFカーネルと線形カーネルの文書分類時の精度差</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110827/1314423984">ナイーブベイズ</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110804/1312476873">Perceptron</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20150720/1437364316">GP-MI</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+                </ul>
+              </div>
+
+              <div id="myfeateng" class="pad30">
+                <h2>素性設計</h2>
+                <p>素性設計に関するもの</p>
+                <ul>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140715/1405358669">Graph of Word, TW-IDF, TF normalize</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140429/1398712297">単語の数学的表現</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130804/1375565959">liblinearで文書分類</a> <span class="label label-success">試す</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130406/1365183300">文字列カーネル</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110904/1315147130">TF-IDF/BM25</a> <span class="label label-primary">メモ</span> </li>
+                </ul>
+              </div>
+
+              <div id="mynlp" class="pad30">
+                <h2>自然言語処理</h2>
+                <p>自然言語処理関係のもの</p>
+                <ul>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140323/1395543387">ナップザック問題として複数文要約</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20150424/1429809127">係り受け解析</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140301/1393658228">Entity Linking</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140125/1390587851">大野の語彙法則</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140110/1389287928">格</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20131228/1388206595">助詞</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20131109/1383968030">文書分類</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130915/1379184751">語義曖昧性解消</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130609/1370773504">読み</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130524/1369330409">KWIC</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130516/1368639484">LDA</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130429/1367170469">NBを使った「日本」の読み分け</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130328/1364403521">テキスト自動要約</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120930/1349014672">構文解析</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120831/1346352889">焼きなまし法で単語分割</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120531/1338396033">品詞</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111101/1320167184">形態素解析のデコーダ部分</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111031/1320078059">Ngram言語モデル</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111025/1319499732">ラティス構築とビタビアルゴリズム</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111014/1318547950">超大規模テキストでのNgram統計</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111012/1318422417">大規模テキストでのNgram統計</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110929/1317253929">形態素解析</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110922/1316663346">計量文献学</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110915/1316103058">コーパス、言語データ</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110907/1315415013">全文検索エンジン</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110906/1315326243">言語モデル</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110904/1315147133">Ngram</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110802/1312303919">自然言語処理タスクまとめ</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110802/1312298173">固有表現抽出</a> <span class="label label-primary">メモ</span> </li>
+                </ul>
+              </div>
+
+              <div id="mydimred" class="pad30">
+                <h2>次元圧縮</h2>
+                <p>次元圧縮に関するもの</p>
+                <ul>
+<li><a href="http://d.hatena.ne.jp/jetbead/20160615/1465925347">t-SNE</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140128/1390840989">Matrix Factorization</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20131011/1381496708">AutoEncoder</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130907/1378537373">Random Projection</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130413/1365792002">MultiDimensional Scaling</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+                </ul>
+              </div>
+
+              <div id="mylm" class="pad30">
+                <h2>言語モデル</h2>
+                <p>言語モデルに関するもの</p>
+                <ul>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120317/1331970129">HPYLM</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110912/1315844092">言語モデルの評価尺度</a> <span class="label label-primary">メモ</span> </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="bs-component">
+
+              <div id="mysearch" class="pad30">
+                <h2>検索</h2>
+                <p>検索、文字列検索に関するもの</p>
+                <ul>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130503/1367517589">Z algorithm</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20121027/1351317982">Aho-Corasick</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120513/1336895972">Rabin-Karp</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120104/1325687465">Suffix Array</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20160415/1460650310">検索エンジントークナイズ</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130430/1367258187">Locality Sensitive Hash</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+                </ul>
+              </div>
+
+              <div id="myprobstat" class="pad30">
+                <h2>確率、統計</h2>
+                <p>確率、統計に関するもの</p>
+                <ul>
+<li><a href="http://d.hatena.ne.jp/jetbead/20141119/1416332678">ベータ分布のquantile</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20141015/1413299688">Friedman testとNemenyi test</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20131005/1380917647">標本抽出</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20131005/1380955598">逐次確率比検定</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130928/1380343582">Mann-WhitneyのU検定</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20121115/1352905526">Resricted Boltzmann Machine</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120303/1330754531">CRP-type samplingで混合比推定</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120229/1330535260">1次元正規分布をGibbs sampling</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120223/1329968616">ガンマ乱数生成</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120216/1329408665">歪んだサイコロシミュレーション</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120202/1328199150">多腕バンディットとUCB1</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120119/1326987540">2次元正規分布をGibbs sampling</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120117/1326820167">サンプリング法</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111229/1325184278">Chinese Restaurant Process</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111007/1317943638">ポアソン分布の最尤推定</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110912/1315844091">xor-shift乱数</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+                </ul>
+              </div>
+
+              <div id="myalgorithm" class="pad30">
+                <h2>アルゴリズム</h2>
+                <p>アルゴリズムに関するもの</p>
+                <ul>
+<li><a href="http://d.hatena.ne.jp/jetbead/20160119/1453139047">latticeのNbest計算</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140905/1409850470">Interpolation Search</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140531/1401470294">編集距離</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20140228/1393596843">Counting Bloom Filter</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120623/1340419446">焼きなまし法</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120520/1337448265">連立一次方程式</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111014/1318598381">焼きなまし法</a> <span class="label label-primary">メモ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110904/1315147129">シャッフル</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110808/1312820433">黄金分割探索</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110724/1311526610">共通部分文字列</a> <span class="label label-primary">メモ</span> <span class="label label-danger">code</span> </li>
+                </ul>
+              </div>
+
+              <div id="mydatastructure" class="pad30">
+                <h2>データ構造</h2>
+                <p>データ構造に関するもの</p>
+                <ul>
+<li><a href="http://d.hatena.ne.jp/jetbead/20151014/1444756877">Minimal Acyclic Subsequential Transducer</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20131107/1383751980">疎行列の格納方式</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130222/1361603458">HyperLogLog</a> <span class="label label-warning">遊ぶ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130202/1359735146">Wavelet Tree</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120626/1340644115">木</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111117/1321487437">ハッシュテーブル</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111027/1319734564">Predictive Search</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111021/1319222240">Common Prefix Search</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111019/1319023136">Double Array</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111010/1318266376">Trie</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111007/1317943634">perlで整数列圧縮(Unary符号化)</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111001/1317485186">スプレイ木</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110918/1316373030">転置インデクスの効率的な保存方法</a> <span class="label label-primary">メモ</span> </li>
+                </ul>
+              </div>
+
+              <div id="mytool" class="pad30">
+                <h2>ツール</h2>
+                <p>ツールやツールの使い方に関するもの</p>
+                <ul>
+<li><a href="http://d.hatena.ne.jp/jetbead/20151230/1451408521">pandasでwikipedia表データ取得</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120331/1333159045">言語モデル構築ツール</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111014/1318598281">MeCabで使える辞書</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110922/1316663341">C++でUTF8</a> <span class="label label-primary">メモ</span> <span class="label label-danger">code</span> </li>
+                </ul>
+              </div>
+
+              <div id="myother" class="pad30">
+                <h2>その他</h2>
+                <p>まとめ資料や発表資料、上記の分類に属さないもの</p>
+                <ul>
+<li><a href="http://d.hatena.ne.jp/jetbead/20141012/1413049390">DSIRNLP#6発表資料</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130901/1378022065">DSIRNLP#4発表資料</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111210/1323499634">DSIRNLP#2発表資料</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20131209/1386518323">競プロアドベントカレンダー(インラインアセンブラ)</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20121202/1354406422">競プロアドベントカレンダー(ビット演算)</a> <span class="label label-primary">メモ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20131031/1383153503">liblinearモデルのフォーマット</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130923/1379919730">ROC曲線/AUC</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130711/1373556031">n列目まででdiff</a> <span class="label label-primary">メモ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20130420/1366428066">時系列解析</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120917/1347825073">正規表現エンジン</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120907/1346952433">名詞を収集(ただし読み情報も)</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120704/1341330528">国際学会</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20120225/1330147159">C++でgnuplot用ファイル出力</a> <span class="label label-primary">メモ</span> <span class="label label-danger">code</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20111021/1319202089">系列ラベリング問題</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110923/1316794767">対数線形モデル</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110904/1315147132">バイアス項</a> <span class="label label-primary">メモ</span> </li>
+<li><a href="http://d.hatena.ne.jp/jetbead/20110723/1311414222">K-meansによるクラスタリング</a> <span class="label label-success">試す</span> <span class="label label-danger">code</span> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </body>
+</html>
