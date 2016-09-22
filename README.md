@@ -1,1 +1,1 @@
-http://jetbead.github.io/goal_board/
+http://jetbead.github.io/
